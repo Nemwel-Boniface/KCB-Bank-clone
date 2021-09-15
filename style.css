@@ -1,4 +1,7 @@
 /*This style sheet will contain all the styling for the landing page as well as the header sections of this website. I will use a mobile first approach to design.*/
+
+/*General page styling*/
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ p
     font-family: 'Open Sans', sans-serif;
 }
 
-
+/*Main Body styling*/
 
 
 
