@@ -1,7 +1,4 @@
 /*This style sheet will contain all the styling for the landing page as well as the header sections of this website. I will use a mobile first approach to design.*/
-
-/*General page styling*/
-
 *{
     margin: 0;
     padding: 0;
@@ -19,23 +16,94 @@ p
     font-family: 'Open Sans', sans-serif;
 }
 
-/*Main Body styling*/
+/*header Page styling*/
 
+.top
+{
+     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)) ,url(images/boatsonlake1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    width: 100%;
+}
+.nav-bar
+{
+    
+    width: 100%;
+    background: #15133b;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar p
+{
+    color: #fff;
+    padding: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.nav-bar p span
+{
+    background: #84bd00;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.nav-bar-socials
+{
+    margin-right: 20px;
+}
+.socisl-icons
+{
+    font-size: 23px;
+    color: #fff;
+    margin-right: 19px;
+}
 
+/*the landing page heading*/
 
+.top-heading
+{
+   margin: 60px 25px 40px 25px; 
+}
+.top-heading h2
+{
+   color: #fff;
+    text-align: center;
+}
 
+/*watch play link now*/
 
-
-
-
-
-
-
-
-
-
-
-
+.top-watch-link
+{
+    margin: 40px 25px 40px 25px;
+}
+.top-watch-link p
+{
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    background: #84bd00;
+    position: relative;
+}
+.top-watch-link a
+{
+    position: absolute;
+    right: -5%;
+    top: -2%;
+    text-align: center;
+}
+.top-watch-link  i
+{
+    font-size: 53px;
+    color: #fff;
+}
 
 
 
