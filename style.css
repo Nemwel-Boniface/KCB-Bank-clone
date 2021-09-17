@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+  background: #f1f5f7;
+}
 
 h2
 {
@@ -75,6 +79,16 @@ p
     text-align: center;
 }
 
+/*Countries flags styling*/
+.nav-bar-EAFlags
+{
+    display: none;
+}
+
+
+
+
+
 /*watch play link now*/
 
 .top-watch-link
@@ -105,8 +119,144 @@ p
     color: #fff;
 }
 
+/*The why work with us section*/
+
+.why-work-with-kcb
+{
+    width: 100%;
+}
+.why-work-with-kcb-wrap
+{
+    padding: 30px 20px 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
+    /*box-shadow: -1px -1px 15px 2px rgba(192,181,181,1);*/
+}
+.why-work-with-kcb-wrap .reasons
+{
+    background: #fff;
+    padding: 12px;
+}
+.why-work-with-kcb-wrap .reasons:hover
+{
+    background: #d5d9db;
+}
+.why-work-with-kcb-wrap .reasons i
+{
+    display: block;
+    font-size: 25px;
+    margin: 20px 20px 10px 20px;
+    text-align: center;
+    opacity: .7;
+}
+
+.why-work-with-kcb-wrap .reasons a
+{
+    display: block;
+    text-decoration: none;
+    color: #84bd00;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.why-work-with-kcb-wrap .reasons a:hover
+{
+    color: #3285a8;
+}
+
+/*Select bank category section */
+.kcb-bank-category
+{
+    margin: 25px 20px 25px 20px;
+}
+.bank-category label
+{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 10px 0;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.bank-category select
+{
+    width: 100%;
+    color: #84bd00;
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid #84bd00;
+    
+}
+.bank-category select option
+{
+    color: #84bd00;
+}
+
+/*The bank financing categories */
+.financing-categories
+{
+    margin: 25px 0 25px 0;
+}
+.financing-categories
+{
+    
+}
+.financing-categories-visuals
+{
+    margin: 30px 0 30px 0;
+    background: #fff;
+}
+.financing-categories-visuals img
+{
+    max-width: 100%;
+}
+.financing-categories-visuals h2
+{
+    margin: 15px 17px 15px 17px;
+    color: #83bd00;
+}
+.financing-categories-visuals p
+{
+    margin: 15px 17px 15px 17px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.financing-categories-links
+{
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+}
+.financing-categories-links a
+{
+    width: 100%;
+    padding: 17px;
+    background: #83bd00;
+    color: #fff;  
+}
+.financing-categories-links i
+{
+    margin: 0 15px 0 45px; 
+    font-size: 20px;
+}
 
 
+
+
+
+
+
+
+/*responsive design now */
+
+@media screen and (min-width: 34em )
+{
+    .nav-bar-EAFlags li:not(:first-child) {
+    display: none;
+  }
+}
 
 
 
