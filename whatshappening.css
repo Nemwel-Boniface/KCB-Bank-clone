@@ -1,0 +1,283 @@
+/*This style sheet will contain all the styling for the Whats happenin  sections of this website. I will use a mobile first approach to design.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  background: #f1f5f7;
+}
+
+h2
+{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+p
+{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*styling for the section*/
+.whatshappening
+{
+    margin: 40px 25px 40px 25px;
+}
+.whatshappening-intro h2
+{
+    margin: 25px 0 20px 0;
+    color: #84bd00;
+}
+.whatshappening-intro a
+{
+    
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.whatshappening-intro a:hover
+{
+    color: #84bd00;
+}
+.whatshappening-intro i
+{
+    margin-left: 25px;
+    font-size: 22px;
+}
+.whatshappening-sections 
+{
+    margin: 35px 0 30px 0;
+    
+}
+.whatshappening-left
+{
+   
+   margin: 15px 0 30px 0; 
+   background: #fff;        
+   padding-top: 15px;    
+}
+.whatshappening-left .left-header
+{
+    margin: 15px 30px 30px 30px;
+    background: rgba(132,189,0, 0.8);
+}
+.whatshappening-left .left-header a
+{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 33px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.whatshappening-left h2
+{
+    
+    margin: 35px 15px 20px 15px;
+    color: #84bd00;
+    font-size: 22px;
+}
+.whatshappeningleft-text
+{
+    margin: 20px 15px 20px 15px;
+}
+.whatshappening-left p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.whatshappening-left .article-date
+{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.whatshappening-left .articlelink
+{
+    width: 48%;
+    background: #84bd00;
+    margin: 20px 15px 40px 15px;
+    padding: 15px;
+}
+.whatshappening-left .articlelink a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;   
+}
+.whatshappening-left .articlelink:hover
+{
+    background: #15133b;   
+}
+.whatshappening-left .articlelink i
+{
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+/*Hide the right side of this container*/
+.whatshappening-right
+{
+    display: none;
+}
+/*Hide the bottom side of this container*/
+.whatshappening-bottom
+{
+    display: none;
+}
+
+
+
+
+/*responsive design now*/
+
+
+@media screen and (min-width: 48.125em )
+{
+    
+    /*Whats happening top headers*/
+    
+    .whatshappening-intro
+    {
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .whatshappening-intro h2
+    {
+        font-size: 40px;
+    }
+    .whatshappening-intro a
+    {
+        font-size: 20px;
+    }
+    
+    /*The whats happening left side*/
+    .whatshappening-left
+    {
+        box-shadow: -1px -1px 15px 2px rgba(192,181,181,1);
+    }
+    .whatshappening-left .left-header
+     {
+         margin: 20px 35px 35px 35px;
+     }
+    .whatshappening-left .left-header a
+    {
+        
+        font-size: 50px;
+    }
+    .whatshappening-left h2
+    {
+        margin: 65px 25px 25px 25px;
+        font-size: 27px;
+    }
+    .whatshappeningleft-text
+    {
+        margin: 20px 25px 20px 25px;
+    }
+    .whatshappening-left p
+    {
+        font-size: 18px;
+    }
+    .whatshappening-left .article-date
+    {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+   .whatshappening-left .articlelink
+   {
+       width: 37%;
+       margin: 20px 15px 40px 15px;
+       padding: 25px;
+   }
+   .whatshappening-left .articlelink a
+   {
+       font-size: 22px;   
+   }
+   .whatshappening-left .articlelink i
+   {
+       margin-left: 15px;
+       font-size: 23px;
+   }
+    
+    
+    
+    
+    /*Show the right side of this container*/
+     .whatshappening-right
+      {
+          display: block;
+          margin-top: 15px;
+      }
+    .whatshappening-right .right-article
+    {
+        background: #fff;
+        margin-bottom: 25px;
+        box-shadow: -1px -1px 15px 2px rgba(192,181,181,1);
+    }
+    .whatshappening-right .right-article a
+    {
+        margin: 50px 60px 10px 60px;
+        text-decoration: none;
+        font-size: 36px;
+        text-align: center;
+    }
+    .whatshappening-right .right-article p
+    {
+        margin: 0 auto;
+        padding-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .whatshappening-right .right-article a:hover
+    {
+       color: #84bd00;
+    }
+    .whatshappening-sections
+    {
+        margin: 40px 60px 40px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+    }
+    
+    
+    /*show the bottom side of this container*/
+    .whatshappening-bottom
+    {
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
