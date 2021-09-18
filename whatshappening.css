@@ -249,11 +249,45 @@ p
     }
     
     
-    /*show the bottom side of this container*/
+    /*show the quick links at the bottom of the page*/
     .whatshappening-bottom
     {
         display: block;
+        width: 100%;
+        background: #003d4c;
     }
+    .whatshappening-bottom .bottom-links
+    {
+        display: flex; 
+    }
+    .relevant-links
+    {
+        margin: 50px 60px 50px 60px;
+        flex: 1;
+    }
+    .relevant-links h2
+    {
+        color: #fff;
+        font-size: 25px;
+        margin: 20px 0 20px 0;
+    }
+    .relevant-links ul li
+    {
+        list-style: none;
+        margin: 10px 0 10px 0;
+    }
+    .relevant-links a
+    {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        margin: 15px 0 15px 0;
+    }
+    .relevant-links a:hover
+    {
+        color: #84bd00;
+    }
+    
     
 }
 
