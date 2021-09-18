@@ -1,0 +1,80 @@
+/*This style sheet will contain all the styling for the KCB mobile app sections of this website. I will use a mobile first approach to design.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  background: #f1f5f7;
+}
+
+h2
+{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+p
+{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Styling for the section start here*/
+.kcbmobileapp
+{
+    width: 100%;
+    background: #84bd00;
+}
+.mobileapp-left
+{
+    margin: 35px 25px 35px 25px;
+    color: #fff;
+    position: relative;
+}
+.mobileapp-left-text h2
+{
+    margin: 0 0 25px 0;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.mobileapp-left-text p
+{
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+}
+
+.mobileapp-left-text li
+{
+    list-style-position: inside;
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+}
+.mobileapp-left-img
+{
+    margin: 55px 160px 40px 0;
+    padding-bottom: 45px;
+}
+.mobileapp-left-img img
+{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
