@@ -42,7 +42,6 @@ p
 {
     margin: 20px 0 20px 0;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .mobileapp-left-text li
@@ -53,7 +52,7 @@ p
 }
 .mobileapp-left-img
 {
-    margin: 55px 150px 40px 0;
+    margin: 55px 65% 40px 0;
     padding-bottom: 45px;
 }
 .mobileapp-left-img img
@@ -63,13 +62,93 @@ p
     margin-bottom: 10px;
 }
 
+/*hide the right mobile*/
+.mobileapp-right
+{
+    display: none;
+}
+
+/*responsive design breakpoint one*/
+
+@media screen and (min-width: 36.4em )
+{
+        .mobileapp-left-img 
+     {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 15px;
+         margin-right: 50%; 
+     }
+    
+        .mobileapp-left-text h2
+      {
+          margin: 0 40px 35px 0;
+          padding-top: 45px;
+          font-size: 32px;
+      }
+      .mobileapp-left-text p
+      {
+          margin: 20px 0 20px 0;
+          font-size: 18px;
+      }
+      
+      .mobileapp-left-text li
+      {
+          list-style-position: inside;
+          margin: 20px 0 20px 0;
+          font-size: 17px;
+      }
+    
+    
+     
+}
 
 
+/*responsive design breakpoint two*/
 
-
-
-
-
+@media screen and (min-width: 42em )
+{
+    /*Show the right mobile phone image*/
+    .mobileapp-right
+    {
+        display: block;
+    }
+    .mobileapp-right img
+    {
+        max-width: 100%;
+        margin: 30% 0 30% 0;
+    }
+    
+    /*Make the section a grid*/
+    .kcbmobileapp
+    {
+        margin: 40px 0 60px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+    
+    /*Change the font sizes of the texts*/
+     .mobileapp-left-text h2
+      {
+          margin: 0 40px 35px 0;
+          padding-top: 45px;
+          font-size: 40px;
+      }
+    .mobileapp-left-text p
+      {
+          margin: 20px 0 20px 0;
+          font-size: 20px;
+      }
+      
+      .mobileapp-left-text li
+      {
+          list-style-position: inside;
+          margin: 20px 0 20px 0;
+          font-size: 19px;
+      }
+    
+}
 
 
 
