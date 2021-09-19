@@ -16,22 +16,6 @@ p
     font-family: 'Open Sans', sans-serif;
 }
 
-/*dummy text*/
-
-.dummy
-{
-    background: #fff;
-    height: 80vh;
-    margin: 15px;
-}
-.dummy h1
-{
-    text-align: center;
-    margin: 40px 0 40px 0;
-    font-size: 40px;
-    color: maroon;
-}
-
 /*footer section styling*/
 
 .kcb-footer
@@ -51,12 +35,12 @@ p
 }
 .footer-socials 
 {
-    margin: 0 70px 0 70px; 
+    margin: 0 60px 0 60px; 
 }
 .footer-socials i
 {
     color: #fff;
-    padding: 9px;
+    padding: 7px;
     text-align: center;
 }
 .footer-socials a
