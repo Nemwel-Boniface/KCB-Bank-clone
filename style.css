@@ -236,6 +236,10 @@ p
     background: #83bd00;
     color: #fff;  
 }
+.financing-categories-links a:hover
+{
+    background: #15133b; 
+}
 .financing-categories-links i
 {
     margin: 0 15px 0 45px; 
