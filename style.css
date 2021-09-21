@@ -4,9 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+} 
 body
 {
   background: #f1f5f7;
+    position: relative;
 }
 
 h2
@@ -41,6 +45,16 @@ p
     align-items: center;
     justify-content: space-between;
 }
+
+/*Gide top most header section on small screens*/
+.top-KCBServices
+{
+    display: none;
+}
+
+
+/*styling for the normalpage now starts*/
+
 .nav-bar p
 {
     color: #fff;
@@ -84,7 +98,16 @@ p
 {
     display: none;
 }
-
+/*main nav bar links */
+.nav-mainBar
+{
+    display: none;
+}
+/*top lower green block*/
+.top-lowerblock
+{
+    display: none;
+}
 
 
 
@@ -109,7 +132,7 @@ p
 .top-watch-link a
 {
     position: absolute;
-    right: -5%;
+    right: -4%;
     top: -2%;
     text-align: center;
 }
@@ -235,6 +258,7 @@ p
     padding: 17px;
     background: #83bd00;
     color: #fff;  
+    text-decoration: none;
 }
 .financing-categories-links a:hover
 {
@@ -255,11 +279,168 @@ p
 
 /*responsive design now */
 
-@media screen and (min-width: 34em )
+@media screen and (min-width: 73em )
 {
-    .nav-bar-EAFlags li:not(:first-child) {
-    display: none;
-  }
+    /**styling for the top most navigation bar that is only visible on bigger screens*/
+    
+    .top-KCBServices
+    {
+        display: block;
+        background: #000;
+        width: 100%;
+        text-align: center;
+    }
+    .top-KCBServices ul 
+    {
+        padding: 12px;
+        margin: 0 30px 0 30px;
+    }
+    .top-KCBServices ul  li
+    {
+        display: inline-block;
+        margin-right: 17px;
+        list-style: none;
+    }
+    .top-KCBServices ul  li a
+    {
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .top-KCBServices ul  li a:hover
+    {
+        color: #84bd00;
+    }
+    /*style the topmost specific links*/
+    .sahl
+    {
+        background: #0c6c63;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    .internetB
+    {
+        background: #2dccd3;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    .vooma
+    {
+        background: #891755;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    .buni
+    {
+        background: #ff9e1b;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    
+    /*main nav bar styling*/
+    .nav-bar p
+    {
+        font-size: 22px;
+    }
+    .nav-bar p span
+    {
+        font-size: 24px;
+        padding: 14px;
+    }
+    .nav-mainBar
+    {
+        display: block; 
+    }
+    .nav-mainBar ul li
+    {
+        display: inline-block;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .nav-mainBar ul li a
+    {
+       text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    .nav-mainBar ul li a:hover
+    {
+        color: #94bd00;
+    }
+    
+    /*hide the hambager menu*/
+    #bars
+    {
+        display: none;
+    }
+    
+    /*show the lower block navbar green section*/
+    .top-lowerblock
+    {
+        display: block;
+        width: 100%;
+        background: #94bd00;
+        margin-left: 70px;
+        height: 50px;
+    }
+    
+    /*now lets make the bg photo 80+vh of the big screen*/
+
+    .top
+    {
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        max-width: 100%;
+    }
+    .top-heading h2
+    {
+        text-align: left;
+        font-size: 49px;
+        margin: 65px 290px 30px 50px;
+    }
+    .top-watch-link p
+    {
+       margin: 65px 290px 30px 50px;
+        width: 20%;
+        font-size: 20px;
+    }
+    .top-watch-link p:hover
+    {
+        background: #15133b;
+    }
+    
+    /*now we'll make the why work with us grid section to display as inline blocks*/
+    .why-work-with-kcb-wrap
+    {
+        display: flex;
+        margin: -76px 50px 40px 60px;
+    }
+    .why-work-with-kcb-wrap .reasons
+    {
+        flex: 1;
+    }
+    .why-work-with-kcb-wrap .reasons i
+    {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .why-work-with-kcb-wrap .reasons a
+    {
+        font-size: 16px;
+    }
+    
+    
+    /*make the kcb bank financing category items grid items*/
+    
+    .financing-categories
+    {
+        display: flex;
+    }
+    
+    
+    
+    
 }
 
 
