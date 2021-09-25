@@ -1,0 +1,143 @@
+/*This style sheet will contain all the styling for the footer page as well as the header sections of this website. I will use a mobile first approach to design.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2
+{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+p
+{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*dummy text*/
+
+.dummy
+{
+    background: #fff;
+    height: 80vh;
+    margin: 15px;
+}
+.dummy h1
+{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 40px;
+    color: maroon;
+}
+
+/*footer section styling*/
+
+.kcb-footer
+{
+    background: #000000;
+    width: 100%;
+}
+.footer-start
+{
+    margin: 0 25px 0 25px;
+}
+.footer-start p
+{
+    color: #fff;
+    text-align: center;
+    opacity: .7;
+    font-size: 14px;
+    padding: 30px 0 20px 0;
+}
+.footer-socials 
+{
+    margin: 0 15% 0 15%;
+    text-align: center;
+}
+.footer-socials i
+{ 
+    color: #fff;
+    font-size: 20px;
+}
+.footer-socials a
+{
+    opacity: .7;
+}
+.footer-socials a:hover
+{
+    opacity: 1;
+}
+.footer-end
+{
+  margin: 0 25px 0 25px;  
+}
+.footer-end p
+{
+    color: #fff;
+    opacity: .7;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+
+
+
+/*responsive design*/
+
+@media screen and (min-width: 64em )
+{
+    .kcb-footer
+    {
+        width: 100%;
+        display: flex;
+    }
+    .footer-start
+    {
+        padding: 30px 0;
+        margin-left: 20px;
+    }
+    .footer-socials
+    {
+        display: flex;
+        margin: auto 0;
+    }
+    .footer-end
+    {
+       padding: 30px 0; 
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
