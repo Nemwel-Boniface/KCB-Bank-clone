@@ -389,6 +389,7 @@
         });
 	    
 	 /*make images smaller on muse over and ormal on mouse out*/
+	 /*first grab all the 3 images and assign their var names as an argument in the function call*/ 
         let image1 = document.getElementById('image1');
         image1.innerHTML = imageManipulator(image1);
         
@@ -398,6 +399,7 @@
         let image3 = document.getElementById('image3');
         image3.innerHTML = imageManipulator(image3);
         
+	 /*does the manipulation of making the images smaller and back to normal on mouse over and out*/   
         function imageManipulator(img)
         {
           /*make image smaller*/
