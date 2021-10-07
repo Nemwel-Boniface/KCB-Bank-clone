@@ -185,7 +185,7 @@
               
               <article class="financing-categories">
                   <div class="financing-categories-visuals">
-                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image">
+                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image1">
                       <div class="texts">
                           <h2>Asset Based Financing</h2>
                           <p>We are your partner to ensure your productivity. If your business...</p>
@@ -196,7 +196,7 @@
                   </div>
                   
                   <div class="financing-categories-visuals">
-                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image">
+                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image2">
                       <div class="texts">
                           <h2>KCB M-Pesa</h2>
                           <p>We are your partner to ensure your productivity. If your business...</p>
@@ -207,7 +207,7 @@
                   </div>
                   
                   <div class="financing-categories-visuals">
-                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image">
+                      <img src="images/happyvendor.jpg" alt="Financing Categories img" id="image3">
                       <div class="texts">
                           <h2>Platinum Banking</h2>
                           <p>We are your partner to ensure your productivity. If your business...</p>
@@ -387,6 +387,28 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
 	     speed: 300
         });
+	    
+	 /*make images smaller on muse over and ormal on mouse out*/
+        let image1 = document.getElementById('image1');
+        image1.innerHTML = imageManipulator(image1);
+        
+        let image2 = document.getElementById('image2');
+        image2.innerHTML = imageManipulator(image2);
+        
+        let image3 = document.getElementById('image3');
+        image3.innerHTML = imageManipulator(image3);
+        
+        function imageManipulator(img)
+        {
+          /*make image smaller*/
+        img.addEventListener('mouseover', function(){
+            this.style.width = '97%';
+        });
+        /*return image back to normal*/
+        img.addEventListener('mouseout', function(){
+           this.style.width = '100%'; 
+        });  
+        }   
     </script>    
     </body>
 </html>
